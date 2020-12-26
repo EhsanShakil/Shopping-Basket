@@ -6,7 +6,7 @@ export type State = {
   price: number;
 };
 
-export const INITIAL_STATE: State[] = [
+const INITIAL_STATE: State[] = [
   {
     id: 1,
     productTitle: "Drone 1",
@@ -32,3 +32,4 @@ export const INITIAL_STATE: State[] = [
     price: 400,
   },
 ];
+export {INITIAL_STATE}

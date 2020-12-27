@@ -1,4 +1,4 @@
-import React from 'react'
+import './header.css'
 
 type HeaderProps = {
     title: string
@@ -6,9 +6,9 @@ type HeaderProps = {
 
 const Header =({title}: HeaderProps) => {
     return (
-        <div>
-            <h1>{ title}</h1>
-        </div>
+        < >
+            <h1 className='header'>{ title}</h1>
+        </>
     )
 }
 

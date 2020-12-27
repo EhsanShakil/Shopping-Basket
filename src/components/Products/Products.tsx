@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
-import { StateProps } from "../store/StateProps";
+import { StateProps } from "../../store/StateProps";
+import './products.css'
 
 const Products = () => {
   const products = useSelector((state: StateProps[]) => state);
@@ -7,13 +8,14 @@ const Products = () => {
   console.log(products);
   return (
     <div>
-      <h1>Products</h1>
       {products.map((product: StateProps, index: number) => (
-        <div key={index}>
-          <img src={product.image} alt="Drones" width={300} height={300} />
+        <div key={index} className='products'>
+          <img src={product.image} alt="Drones" className='image' />
+          <div style={{lineHeight: 1.2}}>
           <h2>{product.productTitle}</h2>
           <p>{product.productDescription}</p>
-          <h2>Price: ${product.price}</h2>
+            <h2>Price: ${product.price}</h2>
+            </div>
         </div>
       ))}
     </div>

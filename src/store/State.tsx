@@ -1,12 +1,6 @@
-export type State = {
-  id: number;
-  productTitle: string;
-  productDescription: string;
-  image: string;
-  price: number;
-};
+import { StateProps } from './StateProps'
 
-const INITIAL_STATE: State[] = [
+const INITIAL_STATE: StateProps[] = [
   {
     id: 1,
     productTitle: "Drone 1",

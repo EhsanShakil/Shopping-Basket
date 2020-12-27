@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { INITIAL_STATE } from './State'
 
-const basketSlice = createSlice({
+export const basketSlice = createSlice({
   name: 'basket',
   initialState: INITIAL_STATE,
   reducers: {
@@ -9,4 +9,4 @@ const basketSlice = createSlice({
   }
 })
 
-export default basketSlice.reducer;
+export default basketSlice;

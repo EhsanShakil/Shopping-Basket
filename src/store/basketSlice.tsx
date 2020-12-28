@@ -8,8 +8,6 @@ export const basketSlice = createSlice({
     add: (state, action) => {
       return state.map(item => {
         if (item.id !== action.payload.id) {
-          console.log("id",action.payload.id)
-          console.log("item",item.id)
           return item
         }
 
@@ -23,8 +21,6 @@ export const basketSlice = createSlice({
     remove: (state, action) => {
       return state.map(item => {
         if (item.id !== action.payload.id) {
-          console.log("id",action.payload.id)
-          console.log("item",item.id)
           return item
         }
 

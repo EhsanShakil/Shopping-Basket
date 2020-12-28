@@ -1,7 +1,7 @@
 /* .thead {
   display: flex;
-  justify-content: space-between; */
-/* width: 600px;
+  justify-content: space-between;
+  width: 500px;
 } */
 .checkout {
   display: flex;
@@ -11,4 +11,27 @@
   margin: 20px;
   border-radius: 20px;
   background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+.tabelhead > th {
+  width: 200px;
+}
+.tabelbody > td {
+  text-align: center;
+}
+.remove {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  outline: none;
+  background-color: white;
+  font-size: large;
+  font-weight: bold;
+  align-self: center;
+  border: white;
+  cursor: pointer;
+}
+.remove:active {
+  transform: translateY(4px);
+  background-color: white;
+  box-shadow: 0 5px black;
 }

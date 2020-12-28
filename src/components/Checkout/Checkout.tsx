@@ -1,10 +1,12 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { StateProps } from "../../store/StateProps";
 import Header from "../Header/Header";
 import "./checkout.css";
+import { remove } from "../../store/basketSlice"
 
 const Checkout = () => {
   const products = useSelector((state: StateProps[]) => state);
+  const dispatch = useDispatch()
   return (
     <>
       <Header title="Shopping Basket" />
@@ -32,7 +34,7 @@ const Checkout = () => {
                     <tr className="tabelbody">
                       <td>{items.productTitle}</td>
                       <td>${items.price}</td>
-                      <td><button className='remove'>Remove</button></td>
+                      <td><button className='remove'  onClick={() => dispatch(remove(items))}>Remove</button></td>
                     </tr>
                     <br />
                   </>

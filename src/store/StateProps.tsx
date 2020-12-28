@@ -4,4 +4,5 @@ export interface StateProps {
   productDescription: string;
   image: string;
   price: number;
+  added?: boolean; 
 };

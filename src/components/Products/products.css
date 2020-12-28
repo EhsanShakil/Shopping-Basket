@@ -36,6 +36,7 @@
   font-weight: bold;
   align-self: center;
   border: white;
+  cursor: pointer;
 }
 .button:active {
   transform: translateY(4px);

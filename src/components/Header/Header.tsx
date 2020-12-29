@@ -18,7 +18,7 @@ const Header = ({ title }: HeaderProps) => {
   return (
     <div className="header">
       <Link to="/" className='link'>
-        <h1 className='title'>{title}</h1>
+        <h2 className='title'>{title}</h2>
       </Link>
       <Link to="/checkout" className='link'>
         <div className='cart'>
